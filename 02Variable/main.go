@@ -39,5 +39,4 @@ func main()  {
 	fmt.Println(IP)
 	fmt.Printf("variable is of Type: %T \n", IP)
 
-
 }
