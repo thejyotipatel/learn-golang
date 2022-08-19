@@ -44,4 +44,16 @@ func main() {
 	 
 		fmt.Println("Numbers IntsAreSorted method:", 	sort.IntsAreSorted(nums))
 
+
+	// how to remove a value from slice based on index
+
+	var languagea = []string{"JS", "Swift", "CSS"}
+
+	fmt.Println(languagea)
+
+	var index = 1
+
+	languagea = append(languagea[:index], languagea[index+1:]... )
+
+	fmt.Println(languagea)
 }
