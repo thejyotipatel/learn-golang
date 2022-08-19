@@ -17,11 +17,12 @@ func main() {
 	fmt.Println("Numbers :" , num)
 
 	// loops in golang
-	// for key,value := range num{
-		// fmt.Printf("key %v, value %v\n", key,value)
-
+	for key,value := range num{
+		fmt.Printf("key %v, value %v\n", key,value)
+	}
+	
 	for _,value := range num{
 
-		fmt.Printf("key v, value %v\n", value)
+		fmt.Printf("value %v\n", value)
 	}
 }
