@@ -11,7 +11,6 @@ type Shape interface {
 
 type Circle struct {
 	radius float64
-
 }
 
 type Rectangle struct {
@@ -31,8 +30,28 @@ func getArea(s Shape) float64  {
 }
 */
 
+type Movie interface {
+	movieInfo() (string)
+}
 
+type Release struct {
+	releaseDate string
+}
+type Price struct {
+	price string
+}
 
+func (r Release) movieInfo() string{
+	return r.releaseDate
+}
+
+func (p Price) movieInfo() string{
+	return p.price
+}
+
+func getMovieInfo(m Movie)(string) {
+	return m.movieInfo()
+}
 func main() {
 	fmt.Println("interface")
 
@@ -41,5 +60,11 @@ func main() {
 
 	fmt.Println("Circle area:",  getArea(circle))
 	fmt.Println("Rectangle area:", getArea(rectangle)) */
+
+	 release := Release{"15 Aug wed"}
+	price := Price{"34.5"}
+fmt.Println("Movie info -")
+	fmt.Println("Relese Date: ",  getMovieInfo(release))
+	fmt.Println("Price: ", getMovieInfo(price)) 
 	
 }
