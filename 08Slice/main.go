@@ -12,7 +12,7 @@ func main() {
 
 	fmt.Println("Slice :", sliceList)
 	fmt.Printf("Slice type: %T\n", sliceList)
-
+sliceList[0] = "guyuj"
 	sliceList = append(sliceList, "orange")
 	fmt.Println("Slice updated: ", sliceList)
 	
@@ -20,6 +20,7 @@ func main() {
 	fmt.Println("Slice 1: - ", sliceList[1:])
 	fmt.Println("Slice 1:3 - ", sliceList[1:3])
 	fmt.Println("Slice :3 - ", sliceList[:3])
+	fmt.Println("Slice :1 - ", sliceList[:1])
 
 // use of make
 	nums := make( []int, 3)
